@@ -1,8 +1,8 @@
 var http = require('http');
-var formidable = require('node_modules/formidable');
 var fs = require('fs');
 var HttpDispatcher = require('httpdispatcher');
 var dispatcher = new HttpDispatcher(); 
+var formidable = require('formidable');
 var foto;
 
 
