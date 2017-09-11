@@ -3,6 +3,7 @@ var fs = require('fs');
 var HttpDispatcher = require('httpdispatcher');
 var dispatcher = new HttpDispatcher(); 
 var formidable = require('formidable');
+var mv = require('mv');
 var foto;
 
 
@@ -416,7 +417,7 @@ var server=http.createServer(function (req, res)
       var oldpath = files.filetoupload.path;
       var newpath = './foto/' + files.filetoupload.name;
 
-      fs.rename(oldpath, newpath, function (err)
+      fs.renameSync(oldpath, newpath, function (err)
       {
         if (err) throw err;
         //res.write('File caricato!');
