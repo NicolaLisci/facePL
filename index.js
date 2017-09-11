@@ -417,7 +417,7 @@ var server=http.createServer(function (req, res)
       var oldpath = files.filetoupload.path;
       var newpath = './foto/' + files.filetoupload.name;
 
-      fs.renameSync(oldpath, newpath, function (err)
+      fs.move(oldpath, newpath, function (err)
       {
         if (err) throw err;
         //res.write('File caricato!');
