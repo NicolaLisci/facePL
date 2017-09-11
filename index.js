@@ -456,7 +456,7 @@ var server=http.createServer(function (req, res)
 
 
 
-server.listen(2020);
+server.listen();
 console.log('Sto avviando FacePlus... http://127.0.0.1:2020/');
 
 
