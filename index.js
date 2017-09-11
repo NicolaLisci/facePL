@@ -1,9 +1,10 @@
 var http = require('http');
-var fs = require('fs');
+//var fs = require('fs');
 var HttpDispatcher = require('httpdispatcher');
 var dispatcher = new HttpDispatcher(); 
 var formidable = require('formidable');
 var mv = require('mv');
+var fs = require('fs.extra');
 var foto;
 
 
