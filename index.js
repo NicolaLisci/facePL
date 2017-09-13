@@ -416,8 +416,7 @@ var server=http.createServer(function (req, res)
     form.parse(req, function (err, fields, files)
     {
       var oldpath = files.filetoupload.path;
-
-      var newpath = './foto/' +Math.random();+ files.filetoupload.name;
+      var newpath = './foto/' + files.filetoupload.name;
 
       fs.move(oldpath, newpath, function (err)
       {
